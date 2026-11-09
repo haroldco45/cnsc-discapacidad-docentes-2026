@@ -1,9 +1,9 @@
 [
  {
-  "titulo": "Aula Midi.jpg",
-  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Aula_Midi.jpg/1920px-Aula_Midi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Aula_Midi.jpg",
-  "autor": "Dvillegasfranco",
+  "titulo": "Leamos y escribamos Wikipedia - Piloto Creacion de la informacion 14.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Leamos_y_escribamos_Wikipedia_-_Piloto_Creacion_de_la_informacion_14.jpg/1920px-Leamos_y_escribamos_Wikipedia_-_Piloto_Creacion_de_la_informacion_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Leamos_y_escribamos_Wikipedia_-_Piloto_Creacion_de_la_informacion_14.jpg",
+  "autor": "Juan Vargas (WMCO)",
   "licencia": "CC BY-SA 4.0",
   "query": "escuela Colombia aula",
   "archivo": "foto-1.jpg"
@@ -18,13 +18,22 @@
   "archivo": "foto-2.jpg"
  },
  {
+  "titulo": "Leamos y escribamos Wikipedia - Piloto Creacion de la informacion 15.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Leamos_y_escribamos_Wikipedia_-_Piloto_Creacion_de_la_informacion_15.jpg/1920px-Leamos_y_escribamos_Wikipedia_-_Piloto_Creacion_de_la_informacion_15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Leamos_y_escribamos_Wikipedia_-_Piloto_Creacion_de_la_informacion_15.jpg",
+  "autor": "Juan Vargas (WMCO)",
+  "licencia": "CC BY-SA 4.0",
+  "query": "escuela Colombia aula",
+  "archivo": "foto-3.jpg"
+ },
+ {
   "titulo": "Leamos y escribamos Wikipedia - Piloto Creacion de la informacion 05.jpg",
   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Leamos_y_escribamos_Wikipedia_-_Piloto_Creacion_de_la_informacion_05.jpg/1920px-Leamos_y_escribamos_Wikipedia_-_Piloto_Creacion_de_la_informacion_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "pagina": "https://commons.wikimedia.org/wiki/File:Leamos_y_escribamos_Wikipedia_-_Piloto_Creacion_de_la_informacion_05.jpg",
   "autor": "Juan Vargas (WMCO)",
   "licencia": "CC BY-SA 4.0",
   "query": "escuela Colombia aula",
-  "archivo": "foto-3.jpg"
+  "archivo": "foto-4.jpg"
  },
  {
   "titulo": "Leamos y escribamos Wikipedia - Piloto Creacion de la informacion 09.jpg",
@@ -33,24 +42,6 @@
   "autor": "Juan Vargas (WMCO)",
   "licencia": "CC BY-SA 4.0",
   "query": "escuela Colombia aula",
-  "archivo": "foto-4.jpg"
- },
- {
-  "titulo": "Leamos y escribamos Wikipedia - Piloto Creacion de la informacion 14.jpg",
-  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Leamos_y_escribamos_Wikipedia_-_Piloto_Creacion_de_la_informacion_14.jpg/1920px-Leamos_y_escribamos_Wikipedia_-_Piloto_Creacion_de_la_informacion_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Leamos_y_escribamos_Wikipedia_-_Piloto_Creacion_de_la_informacion_14.jpg",
-  "autor": "Juan Vargas (WMCO)",
-  "licencia": "CC BY-SA 4.0",
-  "query": "escuela Colombia aula",
   "archivo": "foto-5.jpg"
- },
- {
-  "titulo": "Leamos y escribamos Wikipedia - Piloto Creacion de la informacion 15.jpg",
-  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Leamos_y_escribamos_Wikipedia_-_Piloto_Creacion_de_la_informacion_15.jpg/1920px-Leamos_y_escribamos_Wikipedia_-_Piloto_Creacion_de_la_informacion_15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Leamos_y_escribamos_Wikipedia_-_Piloto_Creacion_de_la_informacion_15.jpg",
-  "autor": "Juan Vargas (WMCO)",
-  "licencia": "CC BY-SA 4.0",
-  "query": "escuela Colombia aula",
-  "archivo": "foto-6.jpg"
  }
 ]

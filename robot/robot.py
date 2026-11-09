@@ -25,7 +25,7 @@ QUERIES = [
     'CNSC "11673"',
     '"concurso docente" CNSC 2026',
 ]
-KEYS = re.compile(r'(docent|magisterio|cnsc|discapacidad|concurso)', re.I)
+KEYS = re.compile(r'(docent|magisterio|maestr|profesor|discapacidad)', re.I)
 
 def noticias():
     items, seen = [], set()
@@ -108,7 +108,7 @@ def fotos():
     from PIL import Image
     cred = []
     for c in cands:
-        if len(cred) >= 6: break
+        if len(cred) >= 5: break
         try:
             im = Image.open(io.BytesIO(get(c["thumb"]))).convert("RGB")
         except Exception as e:
