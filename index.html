@@ -9,21 +9,21 @@
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
-<link rel="canonical" href="https://haroldco45.github.io/cnsc-discapacidad-docentes-2026/">
+<link rel="canonical" href="https://cnsc-discapacidad-docentes-2026.netlify.app/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Biblioteca Legal Colombiana">
 <meta property="og:locale" content="es_CO">
 <meta property="og:title" content="2.255 plazas de profe reservadas para personas con discapacidad">
 <meta property="og:description" content="Inscripción gratis del 23 de noviembre de 2026 al 15 de enero de 2027. Resolución CNSC 11673. Paso a paso y requisitos. Vibras Positivas HM.">
-<meta property="og:url" content="https://haroldco45.github.io/cnsc-discapacidad-docentes-2026/">
-<meta property="og:image" content="https://haroldco45.github.io/cnsc-discapacidad-docentes-2026/og-image.jpg">
+<meta property="og:url" content="https://cnsc-discapacidad-docentes-2026.netlify.app/">
+<meta property="og:image" content="https://cnsc-discapacidad-docentes-2026.netlify.app/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Concurso docente 2026: 2.255 vacantes reservadas para personas con discapacidad">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="2.255 plazas de profe reservadas para personas con discapacidad">
 <meta name="twitter:description" content="Inscripción gratis del 23 nov 2026 al 15 ene 2027. Resolución CNSC 11673.">
-<meta name="twitter:image" content="https://haroldco45.github.io/cnsc-discapacidad-docentes-2026/og-image.jpg">
+<meta name="twitter:image" content="https://cnsc-discapacidad-docentes-2026.netlify.app/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -42,7 +42,26 @@ body:not(.en) [data-l=en],body.en [data-l=es]{display:none!important}
 .top button[aria-pressed=true]{background:var(--amber);color:var(--deep);border-color:var(--amber)}
 #clock{font-variant-numeric:tabular-nums;opacity:.85}
 .hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(1200px 500px at 85% -10%,#2a7a6e 0,transparent 60%),linear-gradient(160deg,#0f3d3e 0%,#0b2b2c 70%);padding:42px 18px 34px}
-.hero .photo{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.28;mix-blend-mode:luminosity}
+.hero .photo{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.2s;animation:kb 24s ease-in-out infinite alternate}
+.hero .photo.on{opacity:.42}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,43,44,.35),rgba(11,43,44,.92) 70%)}
+.hero .in{z-index:1}
+@keyframes kb{to{transform:scale(1.12) translateX(-3%)}}
+.band{position:relative;margin:26px -16px 0;height:230px;overflow:hidden;border-radius:0}
+.band img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.05);transition:transform 6s}
+.band.vis img,.reveal.vis .band img{transform:scale(1)}
+.band figcaption{position:absolute;left:0;right:0;bottom:0;padding:22px 16px 10px;background:linear-gradient(transparent,rgba(0,0,0,.7));color:#fff;font:600 12px Archivo,sans-serif}
+.band figcaption b{display:block;font:900 20px/1.15 Archivo,sans-serif;margin-bottom:3px}
+.hoy-h{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.live{display:inline-flex;align-items:center;gap:6px;font:800 12px Archivo,sans-serif;color:#1f8a5b;text-transform:uppercase;letter-spacing:.06em}
+.live i{width:9px;height:9px;border-radius:50%;background:#2fbf71;animation:pulse 1.6s infinite}
+.news{display:block;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--amber);border-radius:12px;padding:12px 14px;margin:9px 0;transition:transform .2s}
+.news:active{transform:scale(.98)}
+.news .meta{font:700 12px Archivo,sans-serif;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.news .new{background:var(--coral);color:#fff;border-radius:4px;padding:1px 6px;margin-left:6px}
+.news b{display:block;font:700 16px/1.3 Archivo,sans-serif;margin-top:3px}
+#refresh.spin{opacity:.6}
+.credits li{font-size:13px;color:var(--muted)}
 .hero .in{position:relative;max-width:980px;margin:auto}
 .kicker{display:inline-block;font:800 11px/1 Archivo,sans-serif;letter-spacing:.14em;text-transform:uppercase;background:var(--amber);color:var(--deep);padding:7px 10px;border-radius:4px}
 .hero h1{font-size:clamp(30px,7.2vw,60px);line-height:1.02;margin:16px 0 12px;font-weight:900;letter-spacing:-.02em}
@@ -169,6 +188,7 @@ footer b{color:var(--amber)}
 </header>
 
 <nav class="tabs" id="tabs" aria-label="Secciones">
+  <a href="#hoy"><span data-l="es">Hoy</span><span data-l="en">Today</span></a>
   <a href="#que"><span data-l="es">Qué dice</span><span data-l="en">What it says</span></a>
   <a href="#fechas"><span data-l="es">Fechas</span><span data-l="en">Dates</span></a>
   <a href="#puedo"><span data-l="es">¿Puedo?</span><span data-l="en">Can I?</span></a>
@@ -182,6 +202,15 @@ footer b{color:var(--amber)}
 </nav>
 
 <main>
+<section id="hoy" class="reveal">
+  <div class="hoy-h"><h2 data-l="es">Hoy</h2><h2 data-l="en">Today</h2><span class="live"><i></i><span data-l="es">En vivo</span><span data-l="en">Live</span></span><span class="sp" style="flex:1"></span><button class="btn b" id="refresh"><span data-l="es">Actualizar</span><span data-l="en">Refresh</span></button></div>
+  <p class="sub" id="hoyInfo"></p>
+  <div class="card" id="hoyEstado"></div>
+  <div id="newsList"></div>
+  <p class="note" data-l="es">Noticias reales que un robot revisa cada 30 minutos en Google Noticias. Toque una para leerla en el medio original.</p>
+  <p class="note" data-l="en">Real news checked every 30 minutes by a robot on Google News. Tap to read at the original outlet (Spanish).</p>
+</section>
+
 <section id="que" class="reveal">
   <h2 data-l="es">Qué dijo la CNSC</h2><h2 data-l="en">What the CNSC announced</h2>
   <p class="sub" data-l="es">Publicado en cnsc.gov.co el viernes 6 de noviembre de 2026 a las 22:08.</p>
@@ -204,6 +233,7 @@ footer b{color:var(--amber)}
   </div>
   <p class="note" data-l="es">¿Vive en Caucasia o el Bajo Cauca? Los colegios oficiales de los municipios no certificados de Antioquia dependen de la Secretaría de Educación de Antioquia. Busque en la OPEC qué vacantes reservadas ofrece su secretaría.</p>
   <p class="note" data-l="en">Living in Caucasia or Bajo Cauca? Public schools in Antioquia's non-certified towns depend on the Antioquia Department of Education. Check the OPEC for the reserved vacancies it offers.</p>
+  <figure class="band" data-foto="2"><img alt="" loading="lazy"><figcaption><b data-l="es">Una plaza para enseñar</b><b data-l="en">A place to teach</b><span data-l="es">El 7 % de las vacantes es para personas con discapacidad (Ley 2418 de 2024).</span><span data-l="en">7% of vacancies are for people with disabilities (Law 2418 of 2024).</span></figcaption></figure>
 </section>
 
 <section id="fechas" class="reveal">
@@ -241,6 +271,7 @@ footer b{color:var(--amber)}
   <div class="q" data-k="2"><p data-l="es">2. ¿Tiene el título que pide el cargo (licenciatura, profesional u otro según la OPEC)?</p><p data-l="en">2. Do you hold the degree the post requires (teaching degree, professional degree or as stated in the OPEC)?</p><div class="opts"><button data-v="y">Sí / Yes</button><button data-v="n">No</button><button data-v="u">?</button></div></div>
   <div class="q" data-k="3"><p data-l="es">3. ¿Ese título (y la experiencia que pida el cargo) estará obtenido a más tardar el 15 de enero de 2027?</p><p data-l="en">3. Will that degree (and any required experience) be completed by January 15, 2027?</p><div class="opts"><button data-v="y">Sí / Yes</button><button data-v="n">No</button><button data-v="u">?</button></div></div>
   <div id="verdict" aria-live="polite"></div>
+  <figure class="band" data-foto="3"><img alt="" loading="lazy"><figcaption><b data-l="es">La inscripción es gratis</b><b data-l="en">Registration is free</b><span data-l="es">Solo necesita el certificado de discapacidad y sus documentos en PDF.</span><span data-l="en">You only need the disability certificate and your PDFs.</span></figcaption></figure>
 </section>
 
 <section id="pasos" class="reveal">
@@ -280,6 +311,7 @@ footer b{color:var(--amber)}
   </div>
   <p data-l="es"><b>Ojo:</b> si no tiene el certificado o se le venció, empiece el trámite ya. Las citas de valoración pueden demorarse, y el certificado debe estar cargado antes del cierre.</p>
   <p data-l="en"><b>Heads up:</b> if you don't have the certificate or it expired, start now. Assessment appointments can take time, and it must be uploaded before closing.</p>
+  <figure class="band" data-foto="4"><img alt="" loading="lazy"><figcaption><b data-l="es">Mérito, no favores</b><b data-l="en">Merit, not favors</b><span data-l="es">Nadie puede venderle un cupo: el concurso lo gana el mérito.</span><span data-l="en">No one can sell you a spot: merit wins the exam.</span></figcaption></figure>
 </section>
 
 <section id="mitos" class="reveal">
@@ -300,6 +332,7 @@ footer b{color:var(--amber)}
   <div class="card law"><h3 data-l="es">Resolución 1197 de 2024 (MinSalud)</h3><h3 data-l="en">Resolution 1197 of 2024 (Health Ministry)</h3><p data-l="es">Regula cómo se expide el certificado de discapacidad y el registro RLCPD.</p><p data-l="en">Regulates how the disability certificate and RLCPD registry are issued.</p></div>
   <div class="card law"><h3 data-l="es">Decreto Legislativo 1384 de 2026</h3><h3 data-l="en">Legislative Decree 1384 of 2026</h3><p data-l="es">Medidas transitorias por la emergencia del terremoto del 10 de agosto; llevó a la CNSC a ajustar el cronograma del concurso.</p><p data-l="en">Temporary measures for the August 10 earthquake emergency; led the CNSC to adjust the exam schedule.</p></div>
   <div class="card law"><h3 data-l="es">Resolución CNSC 11673 de 2026</h3><h3 data-l="en">CNSC Resolution 11673 of 2026</h3><p data-l="es">Fija el inicio de las inscripciones de las vacantes reservadas en los Procesos de Selección 2917 a 3006 de 2026.</p><p data-l="en">Sets registration for reserved vacancies in Selection Processes 2917 to 3006 of 2026.</p></div>
+  <figure class="band" data-foto="5"><img alt="" loading="lazy"><figcaption><b data-l="es">Pregunte por escrito</b><b data-l="en">Ask in writing</b><span data-l="es">La CNSC debe responderle en 15 días hábiles.</span><span data-l="en">The CNSC must reply within 15 business days.</span></figcaption></figure>
 </section>
 
 <section id="peticion" class="reveal">
@@ -347,7 +380,9 @@ footer b{color:var(--amber)}
     <li><a href="https://www.noticiasrcn.com/economia/atencion-aspirantes-cnsc-confirma-importantes-cambios-en-el-concurso-docente-2026-1071226" target="_blank" rel="noopener">Noticias RCN — cronograma del concurso docente 2026</a></li>
     <li><span data-l="es">Constitución Política de 1991; Ley 1618 de 2013; Ley 2418 de 2024; Decreto Ley 1278 de 2002; Ley 1755 de 2015; Resolución 1197 de 2024 del Ministerio de Salud.</span><span data-l="en">Colombian Constitution of 1991; Law 1618 of 2013; Law 2418 of 2024; Decree-Law 1278 of 2002; Law 1755 of 2015; Health Ministry Resolution 1197 of 2024.</span></li>
   </ul>
-  <p class="note" data-l="es">Esta guía es pedagógica y no reemplaza el Acuerdo de convocatoria ni la Resolución 11673. Ante cualquier diferencia, mandan los documentos oficiales de la CNSC. Actualizado: 8 de noviembre de 2026.</p>
+  <h3 class="sans" style="color:var(--deep)" data-l="es">Créditos de las fotos</h3><h3 class="sans" style="color:var(--deep)" data-l="en">Photo credits</h3>
+  <ul class="credits" id="credits"></ul>
+  <p class="note" data-l="es">Esta guía es pedagógica y no reemplaza el Acuerdo de convocatoria ni la Resolución 11673. Ante cualquier diferencia, mandan los documentos oficiales de la CNSC. Actualizado: 8 de noviembre de 2026; las noticias se actualizan solas.</p>
   <p class="note" data-l="en">This guide is educational and does not replace the official Agreement or Resolution 11673. Official CNSC documents prevail. Updated: November 8, 2026.</p>
 </section>
 </main>
@@ -365,17 +400,47 @@ footer b{color:var(--amber)}
 var TZ='America/Bogota';
 var START=Date.UTC(2026,10,23,5,0,0);      // 23 nov 2026 00:00 COT
 var END=Date.UTC(2027,0,16,4,59,59);       // 15 ene 2027 23:59:59 COT
-var URL_APP='https://haroldco45.github.io/cnsc-discapacidad-docentes-2026/';
+var URL_APP='https://cnsc-discapacidad-docentes-2026.netlify.app/';
 var lang='es';
 function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
 function $(id){return document.getElementById(id)}
 function toast(t){var x=$('toast');x.textContent=t;x.classList.add('show');setTimeout(function(){x.classList.remove('show')},2200)}
 
 // Optional real photo: drop foto.jpg next to index.html
-var im=new Image();im.onload=function(){$('heroPhoto').style.backgroundImage='url(foto.jpg)'};im.src='foto.jpg';
+var RAW='https://raw.githubusercontent.com/haroldco45/cnsc-discapacidad-docentes-2026/main/';
+function getJSON(u){return fetch(u,{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()})}
+function fresh(file){return getJSON(RAW+file+'?t='+Date.now()).catch(function(){return getJSON(file+'?t='+Date.now())})}
+var CRED=[];
+function photos(){fresh('img/creditos.json').then(function(c){CRED=c||[];
+  var base=function(f){return 'img/'+f};
+  if(CRED[0]){var i=new Image();i.onload=function(){var h=$('heroPhoto');h.style.backgroundImage='url('+i.src+')';h.classList.add('on')};i.onerror=function(){i.onerror=null;i.src=RAW+'img/'+CRED[0].archivo};i.src=base(CRED[0].archivo)}
+  document.querySelectorAll('.band').forEach(function(b){var n=+b.getAttribute('data-foto'),c=CRED[(n-1)%Math.max(1,CRED.length)];
+    if(!c){b.style.display='none';return}var im=b.querySelector('img');im.onerror=function(){im.onerror=null;im.src=RAW+'img/'+c.archivo};im.src=base(c.archivo)});
+  $('credits').innerHTML=CRED.map(function(c){return '<li>'+esc(c.titulo)+' — '+esc(c.autor)+' · <a href="'+esc(c.pagina)+'" target="_blank" rel="noopener">'+esc(c.licencia)+'</a>, Wikimedia Commons</li>'}).join('');
+}).catch(function(){document.querySelectorAll('.band').forEach(function(b){b.style.display='none'})})}
+function esc(t){return String(t||'').replace(/[&<>"]/g,function(m){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]})}
+
+// HOY: noticias del robot
+var NEWS=null;
+function ago(iso){var m=Math.round((Date.now()-Date.parse(iso))/60000),E=lang==='en';
+  if(m<60)return E?m+' min ago':'hace '+m+' min';var h=Math.round(m/60);if(h<24)return E?h+' h ago':'hace '+h+' h';var d=Math.round(h/24);return E?d+' d ago':'hace '+d+' d'}
+function dayCOT(t){return new Intl.DateTimeFormat('en-CA',{timeZone:TZ}).format(new Date(t))}
+function renderHoy(){var E=lang==='en',now=Date.now(),today=dayCOT(now);
+  var est;if(now<START){var d=Math.ceil((START-now)/864e5);est=E?'<b>Today:</b> registration is not open yet. It opens in '+d+' day(s), on Monday, November 23 at 00:00. Use today to create your SIMO account and upload PDFs.':'<b>Hoy:</b> todavía no abren las inscripciones. Faltan '+d+' día(s): abren el lunes 23 de noviembre a las 00:00. Aproveche hoy para crear su usuario en SIMO y subir sus PDF.'}
+  else if(now<=END){var r=Math.ceil((END-now)/864e5);est=E?'<b>Today:</b> registration is OPEN. '+r+' day(s) left until January 15, 2027 at 23:59.':'<b>Hoy:</b> las inscripciones están ABIERTAS. Quedan '+r+' día(s) hasta el 15 de enero de 2027 a las 23:59.'}
+  else est=E?'<b>Today:</b> registration for reserved vacancies closed on January 15, 2027.':'<b>Hoy:</b> la inscripción de vacantes reservadas cerró el 15 de enero de 2027.';
+  $('hoyEstado').innerHTML=est;
+  if(!NEWS){$('newsList').innerHTML='<p class="note">'+(E?'Loading news…':'Cargando noticias…')+'</p>';return}
+  var list=NEWS.noticias||[],hoy=list.filter(function(n){return dayCOT(n.fecha)===today});
+  $('hoyInfo').textContent=(hoy.length?(E?hoy.length+' news item(s) today':hoy.length+' noticia(s) de hoy'):(E?'No new stories today — latest news:':'Hoy no hay noticias nuevas — lo más reciente:'))+(NEWS.actualizado?(E?' · robot update ':' · robot actualizó ')+ago(NEWS.actualizado):'');
+  var show=(hoy.length?hoy:list).slice(0,8);
+  $('newsList').innerHTML=show.length?show.map(function(n){var isNew=now-Date.parse(n.fecha)<864e5;
+    return '<a class="news" href="'+esc(n.link)+'" target="_blank" rel="noopener"><span class="meta">'+esc(n.fuente)+' · '+ago(n.fecha)+(isNew?'<span class="new">'+(E?'NEW':'NUEVO')+'</span>':'')+'</span><b>'+esc(n.titulo)+'</b></a>'}).join(''):'<p class="note">'+(E?'No news yet.':'Aún no hay noticias.')+'</p>'}
+function loadNews(btn){if(btn)btn.classList.add('spin');return fresh('noticias.json').then(function(j){NEWS=j}).catch(function(){NEWS=NEWS||{noticias:[]}}).then(function(){renderHoy();if(btn){btn.classList.remove('spin');toast(lang==='en'?'Updated':'Actualizado')}})}
+$('refresh').onclick=function(){loadNews(this)};
 
 function setLang(l){lang=l;document.body.classList.toggle('en',l==='en');document.documentElement.lang=l==='en'?'en':'es-CO';
-  $('bES').setAttribute('aria-pressed',l==='es');$('bEN').setAttribute('aria-pressed',l==='en');store('cnscdisc-lang',l);tick();verdict();buildPet();prog()}
+  $('bES').setAttribute('aria-pressed',l==='es');$('bEN').setAttribute('aria-pressed',l==='en');store('cnscdisc-lang',l);tick();verdict();buildPet();prog();if($('newsList'))renderHoy()}
 $('bES').onclick=function(){setLang('es')};$('bEN').onclick=function(){setLang('en')};
 
 function clock(){var f=new Intl.DateTimeFormat(lang==='en'?'en-US':'es-CO',{timeZone:TZ,weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',second:'2-digit'});$('clock').textContent=f.format(new Date())+' COT'}
@@ -440,7 +505,7 @@ function share(){var t=lang==='en'?'2,255 teaching posts reserved for people wit
   if(navigator.share){navigator.share({title:document.title,text:t,url:URL_APP}).catch(function(){})}else window.open('https://wa.me/?text='+encodeURIComponent(t+URL_APP),'_blank')}
 $('share').onclick=share;$('shareEn').onclick=share;
 
-var l0=store('cnscdisc-lang');if(!l0&&/^en/i.test(navigator.language||''))l0='en';setLang(l0==='en'?'en':'es');countUp();
+var l0=store('cnscdisc-lang');if(!l0&&/^en/i.test(navigator.language||''))l0='en';setLang(l0==='en'?'en':'es');countUp();photos();loadNews();setInterval(function(){loadNews()},10*60*1000);document.addEventListener('visibilitychange',function(){if(!document.hidden)loadNews()});
 if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(function(){});
 })();
 </script>

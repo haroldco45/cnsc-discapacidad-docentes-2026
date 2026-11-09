@@ -14,7 +14,7 @@ Cuenta regresiva en hora Colombia · línea de tiempo · verificador "¿Puedo in
 1. Crear el repo **`cnsc-discapacidad-docentes-2026`** (todo en minúscula, exacto) en `haroldco45`.
 2. Subir a la raíz: `index.html`, `manifest.json`, `sw.js`, `icon-192.png`, `icon-512.png`, `og-image.jpg`, `README.md`.
 3. Settings → Pages → rama `main`, carpeta `/ (root)`.
-4. URL: https://haroldco45.github.io/cnsc-discapacidad-docentes-2026/
+4. URL: https://cnsc-discapacidad-docentes-2026.netlify.app/
 5. Probar la vista previa en https://developers.facebook.com/tools/debug (Scrape Again).
 
 Si se publica en Netlify, cambiar en `index.html` las 4 URL de `og:url`, `og:image`, `twitter:image` y `canonical`, y `URL_APP` en el script.

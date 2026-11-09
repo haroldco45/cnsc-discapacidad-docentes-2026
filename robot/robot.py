@@ -94,6 +94,7 @@ def commons_candidates():
     return out
 
 def fotos():
+    os.makedirs(os.path.join(ROOT, "img"), exist_ok=True)
     cred_path = os.path.join(ROOT, "img", "creditos.json")
     fijas = os.path.join(ROOT, "img", "fijas.json")  # lista curada a mano (opcional)
     if os.path.exists(cred_path):
