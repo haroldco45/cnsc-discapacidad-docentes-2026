@@ -28,6 +28,6 @@ jobs:
           git config user.email "robot-vibras@users.noreply.github.com"
           git add -A noticias.json img og-image.jpg
           if git diff --cached --quiet; then echo "Sin novedades"; exit 0; fi
-          git commit -m "Robot: noticias y fotos $(TZ=America/Bogota date '+%Y-%m-%d %H:%M') COT"
+          git commit -m "[skip netlify] Robot: noticias y fotos $(TZ=America/Bogota date '+%Y-%m-%d %H:%M') COT"
           git pull --rebase origin main
           git push
